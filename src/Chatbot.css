@@ -1,0 +1,87 @@
+*{
+    color:#fff
+}
+p{
+    font-size: 14px;
+}
+.main-background{
+    height:846px;
+    width:1492px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.chat-container{
+    height:806px;
+    width:726px;
+    /* border:1px solid #fff; */
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 12px;
+}
+.sender{
+    width:fit-content;
+    border-bottom-left-radius: 22px;  
+    border-top-right-radius: 22px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    padding:0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:6px;
+    margin-bottom: 6px;
+    margin-left: auto;
+    line-break: anywhere;
+}
+.receiver{
+    width:fit-content;
+    border-top-left-radius: 22px;  
+    border-bottom-right-radius: 22px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:6px;
+    margin-bottom: 6px;
+    margin-right: auto;
+}
+.keypad-container{
+    width:auto;
+    height:35px;
+    /* border:1px solid #fff; */
+    position: sticky;
+    top:780px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0px 8px;
+}
+.keypad-input{
+    width:92%;
+    outline: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 0px 2px;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #fff;
+    border-bottom-width:1.3px ;
+    font-size: 14px;
+}
+.send-image, button{
+    /* margin-left: 2%; */
+    border-radius:  6px;
+    border:none;
+    outline: none;
+    width:8%;
+    height: 35px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
