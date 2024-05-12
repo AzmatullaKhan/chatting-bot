@@ -3,6 +3,8 @@ import Questions from './Questions'
 
 function Chatbot() {
 
+  // document.getElementById('chat_container').scroll(0,0)
+
   window.addEventListener('beforeunload',(e)=>{
     e.preventDefault();
   })
@@ -56,6 +58,8 @@ function Chatbot() {
 
       chat_container.appendChild(reply_div)
 
+      chat_container.scrollTop=chat_container.scrollHeight
+
     }
     else{
       alert('Enter the message')
@@ -66,7 +70,16 @@ function Chatbot() {
       <div className="main-container">
         <div className="chat-container" id="chat_container">
           <div className="receiver">
-            <p>Hi, Pleasure to have you here</p>
+            <p>I am a chatbot made by Azmatulla</p>
+          </div>
+          <div className="receiver">
+            <p>Still there are some  upgrades need to be made</p>
+          </div>
+          <div className="receiver">
+            <p>Pleasure to have you here</p>
+          </div>
+          <div className="receiver">
+            <p>How you doing</p>
           </div>
         </div>
           <div className="keypad-container">

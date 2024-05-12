@@ -3,6 +3,7 @@
 }
 p{
     font-size: 14px;
+    font-weight: bolder;
 }
 .main-background{
     height:846px;
@@ -11,17 +12,24 @@ p{
     justify-content: center;
     box-sizing: border-box;
     padding: 20px;
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+}
+.logo{
+    height:100px;
+    width: 200px;
+    position: absolute;
+    z-index: 12;
 }
 .main-container{
     border-radius:12px ;
-    /* border:1px solid #fff; */
     padding: 12px;
     box-sizing: border-box;
+    backdrop-filter: blur(20px);
 }
 .chat-container{
     height:734px;
     width:726px;
-    /* border:1px solid #fff; */
     border-radius: 12px;
     box-sizing: border-box;
     padding: 12px;
@@ -47,6 +55,7 @@ p{
 }
 .receiver{
     width:fit-content;
+    max-width: 350px;
     border-top-left-radius: 22px;  
     border-bottom-right-radius: 22px;
     border: 1px solid #fff;
@@ -62,7 +71,6 @@ p{
 .keypad-container{
     width:auto;
     height:35px;
-    /* border:1px solid #fff; */
     position: sticky;
     top:780px;
     border-bottom-left-radius: 6px;
@@ -85,7 +93,6 @@ p{
     font-size: 14px;
 }
 .send-image, button{
-    /* margin-left: 2%; */
     border-radius:  6px;
     border:none;
     outline: none;
