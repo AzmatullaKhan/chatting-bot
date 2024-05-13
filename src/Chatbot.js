@@ -9,7 +9,7 @@ function Chatbot() {
     e.preventDefault();
   })
 
-  const SenderMessageGenerator=()=>{
+  const SenderMessageGenerator=async()=>{
 
     let sender_input=document.getElementById('sender-input').value;
 
@@ -27,7 +27,7 @@ function Chatbot() {
     if(is_alpha_contain){
 
       let chat_container=document.getElementById('chat_container');
-
+      document.getElementById('sender-input').readOnly=true
       let sender_div=document.createElement('div')
       sender_div.className="sender"
 
@@ -47,13 +47,63 @@ function Chatbot() {
           reply="hmm"
         }
       });
-      console.log(reply)
+
+      let reply_img=document.createElement('img');
+      reply_img.src=require('./images/robot.png');
+      reply_img.className='reply-image'
+      reply_img.alt='bot'
+
+      let dots_div=document.createElement('div')
+      dots_div.className='dot-container'
+      dots_div.id='dots'
+
+      let dot1_p=document.createElement('p')
+      dot1_p.innerText="•"
+      dot1_p.className="dot1"
+    
+      let dot2_p=document.createElement('p')
+      dot2_p.innerText="•"
+      dot2_p.className="dot2"
+
+      let dot3_p=document.createElement('p')
+      dot3_p.innerText="•"
+      dot3_p.className="dot3"
+
+      let dot4_p=document.createElement('p')
+      dot4_p.innerText="•"
+      dot4_p.className="dot4"
+
+      let dot5_p=document.createElement('p')
+      dot5_p.innerText="•"
+      dot5_p.className="dot5"
+
       let reply_div=document.createElement('div')
       reply_div.className="receiver"
 
       let reply_p=document.createElement('p')
       reply_p.textContent=reply
+      reply_p.id="reply"
+      reply_p.className="reply-message-hidden"
 
+      function gap() {
+        document.getElementById('dots').className='dots-hidden'
+        document.getElementById('dots').id=''
+        document.getElementById('reply').className='reply-message'
+        document.getElementById('reply').id=''
+        chat_container.scrollTop=chat_container.scrollHeight
+        document.getElementById('sender-input').readOnly=false
+      }
+      
+      setTimeout(gap, 1800);
+
+      dots_div.appendChild(dot1_p)
+      dots_div.appendChild(dot2_p)
+      dots_div.appendChild(dot3_p)
+      dots_div.appendChild(dot4_p)
+      dots_div.appendChild(dot5_p)
+      
+      reply_div.appendChild(reply_img)
+      reply_div.appendChild(dots_div)
       reply_div.appendChild(reply_p)
 
       chat_container.appendChild(reply_div)
@@ -70,16 +120,20 @@ function Chatbot() {
       <div className="main-container">
         <div className="chat-container" id="chat_container">
           <div className="receiver">
+            <img src={require('./images/robot.png')} alt='bot' className="reply-image"/>
             <p>I am a chatbot made by Azmatulla</p>
           </div>
           <div className="receiver">
+            <img src={require('./images/robot.png')} alt='bot' className="reply-image"/>
             <p>Still there are some  upgrades need to be made</p>
           </div>
           <div className="receiver">
+            <img src={require('./images/robot.png')} alt='bot' className="reply-image"/>
             <p>Pleasure to have you here</p>
           </div>
           <div className="receiver">
-            <p>How you doing</p>
+            <img src={require('./images/robot.png')} alt='bot' className="reply-image"/>
+            <p>Hi</p>
           </div>
         </div>
           <div className="keypad-container">

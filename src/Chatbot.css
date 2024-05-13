@@ -42,6 +42,7 @@ p{
     width:fit-content;
     border-bottom-left-radius: 22px;  
     border-top-right-radius: 22px;
+    border-top-left-radius: 22px;
     border: 1px solid #fff;
     box-sizing: border-box;
     padding:0px 30px;
@@ -56,8 +57,9 @@ p{
 .receiver{
     width:fit-content;
     max-width: 350px;
-    border-top-left-radius: 22px;  
+    border-top-right-radius: 22px;  
     border-bottom-right-radius: 22px;
+    border-bottom-left-radius: 22px;
     border: 1px solid #fff;
     box-sizing: border-box;
     padding: 0px 30px;
@@ -67,6 +69,77 @@ p{
     margin-top:6px;
     margin-bottom: 6px;
     margin-right: auto;
+}
+.reply-image{
+    height:inherit;
+    width:50px;
+    position: relative;
+    left:-20px
+}
+.dot-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dots-hidden{
+    display: none;
+}
+.dot1{
+    position: relative;
+    animation: dot1-animation 0.3s ease-in 0s;
+    animation-iteration-count: 5;
+
+}
+@keyframes dot1-animation {
+    0%{top:0px;}
+    50%{top:-10px} 
+    100%{top:0px}
+}
+.dot2{
+    position: relative;
+    animation: dot2-animation 0.3s ease-in 0.2s;
+    animation-iteration-count: 4;
+}
+@keyframes dot2-animation {
+    0%{top:0px}
+    50%{top:-10px} 
+    100%{top:0px}
+}
+.dot3{
+    position: relative;
+    animation: dot3-animation 0.3s ease-in 0.4s;
+    animation-iteration-count: 3;
+}
+@keyframes dot3-animation {
+    0%{top:0px}
+    50%{top:-10px} 
+    100%{top:0px}
+}
+.dot4{
+    position: relative;
+    animation: dot4-animation 0.3s ease-in 0.6s;
+    animation-iteration-count: 2;
+}
+@keyframes dot4-animation {
+    0%{top:0px}
+    50%{top:-10px} 
+    100%{top:0px}
+}
+.dot5{
+    position: relative;
+    animation: dot5-animation 0.3s ease-in 0.8s;
+    animation-iteration-count: 1;
+}
+@keyframes dot5-animation {
+    0%{top:0px}
+    50%{top:-10px} 
+    100%{top:0px}
+}
+.reply-message-hidden{
+    display: none;
+}
+.reply-message{
+    display: block;
 }
 .keypad-container{
     width:auto;
