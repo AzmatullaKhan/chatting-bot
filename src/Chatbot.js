@@ -141,6 +141,9 @@ function Chatbot() {
             <button onClick={SenderMessageGenerator}>Send</button>
           </div>
       </div>
+      <footer>
+      <p><a href="https://github.com/AzmatullaKhan">Copyright © All Rights Reserved 2024 Azmatulla Khan ®</a></p>
+      </footer>
     </div>
   );
 }

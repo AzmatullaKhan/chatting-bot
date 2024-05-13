@@ -28,7 +28,7 @@ p{
     backdrop-filter: blur(20px);
 }
 .chat-container{
-    height:734px;
+    height:714px;
     width:726px;
     border-radius: 12px;
     box-sizing: border-box;
@@ -145,7 +145,7 @@ p{
     width:auto;
     height:35px;
     position: sticky;
-    top:780px;
+    top:750px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     display: flex;
@@ -174,4 +174,13 @@ p{
     color: #fff;
     background-color: transparent;
     cursor: pointer;
+}
+footer{
+    position: absolute;
+    top:795px;
+}
+footer a{
+    font-size: 16px;
+    font-weight: lighter;
+    text-decoration: none;
 }
